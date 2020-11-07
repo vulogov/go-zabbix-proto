@@ -3,7 +3,7 @@ package agent
 import (
 	"encoding/json"
 	"fmt"
-	"github.com/akomic/go-zabbix-proto/client"
+	"github.com/vulogov/go-zabbix-proto/client"
 	"time"
 )
 
