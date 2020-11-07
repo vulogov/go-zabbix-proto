@@ -24,7 +24,7 @@ func NewProxy(name string, host string, port int) (p *Proxy) {
 // Proxy method. Sends heartbeat to Zabbix.
 func (proxy *Proxy) SendHeartbeat() (response *ProxyResponse, err error) {
 	packet := proxy.NewGenericPacket(`proxy heartbeat`)
-
+	fmt.Println("AAAA",packet)
 	var res []byte
 	res, err = proxy.Client.Send(packet)
 	if err != nil {
